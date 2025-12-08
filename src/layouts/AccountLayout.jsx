@@ -4,7 +4,7 @@ import '../styles/AccountLayout.css'
 
 const AccountLayout = () => {
   return (
-    <div className='flex'>
+    <div className='flex gap-2'>
         <div className="side-nav">
             <ul>
                 <Link to=''><li>Profile</li></Link>

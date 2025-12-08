@@ -1,9 +1,15 @@
-import React from 'react'
-import { Search, UserRound } from 'lucide-react'
+import React, { useState } from 'react'
+import { Menu, Search, UserRound } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import '../styles/Navbar.css'
+import SideMenu from './SideMenu'
 
 const Navbar = () => {
+    const [showMenu, setShowMenu] = useState(false)
+
+    const handleShowMenu = () => {
+        setShowMenu(true)
+    }
   return (
     <div className='navbar'>
         <Link to='/' className='rm-pad'><h2 className='logo'>Read-It</h2></Link>
@@ -20,6 +26,13 @@ const Navbar = () => {
                 </li>
             </Link>
         </ul>
+        <div className="nav-icons">
+            <Search size={18}/>
+            <Menu size={18} onClick={handleShowMenu}/>
+        </div>
+
+        {showMenu && <SideMenu setShowMenu={setShowMenu} />}
+        
     </div>
   )
 }
