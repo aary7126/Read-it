@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "../styles/Profile.css";
+import '../../styles/Profile.css'
+import { useNavigate } from "react-router-dom";
 
 function Profile() {
 
@@ -10,9 +11,11 @@ function Profile() {
         email: "Johndoe@gmail.com",
         pass: "****************"});
 
-    function editprofile(){
-        alert("edit feature coming soon");
-    }
+    // function editprofile(){
+    //     alert("edit feature coming soon");
+    // }
+
+    const navigate = useNavigate()
 
     return (
         <div className="main">
@@ -48,7 +51,7 @@ function Profile() {
             </div>
 
             <div className="button">
-                <button onClick={editprofile}>Edit profile</button>
+                <button onClick={() => {navigate('/account/edit-profile')}}>Edit profile</button>
             </div>
             <div className="update">Last updated: 18 February 2025</div>
 
