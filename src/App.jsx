@@ -7,12 +7,14 @@ import Contact from './pages/Contact'
 import Shop from './pages/Shop'
 import Product from './pages/Product'
 import Categories from './pages/Categories'
-import Profile from './pages/Profile'
+import Profile from './pages/Profile/Profile'
+import EditProfile from './pages/Profile/EditProfile'
 import './styles/App.css'
 import Footer from './components/Footer'
 import AccountLayout from './layouts/AccountLayout'
 import MyOrders from './pages/MyOrders'
 import Checkout from './pages/Checkout'
+import Cart from './pages/Cart'
 
 function App() {
 
@@ -30,8 +32,10 @@ function App() {
         <Route path='/account' element={<AccountLayout />}>
           <Route index element={<Profile />} />
           <Route path='orders' element={<MyOrders />} />
+          <Route path='edit-profile' element={<EditProfile />} />
         </Route>
         <Route path='/checkout/:id' element={<Checkout />}/>
+        <Route path='/cart' element={<Cart />} />
       </Routes>
       <Footer />
     </div>
@@ -40,3 +44,4 @@ function App() {
 }
 
 export default App
+

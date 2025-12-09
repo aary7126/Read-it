@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Menu, Search, UserRound } from 'lucide-react'
+import { Menu, Search, ShoppingBasket, UserRound } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import '../styles/Navbar.css'
 import SideMenu from './SideMenu'
@@ -23,6 +23,11 @@ const Navbar = () => {
             <Link to='/account' className='hover-link'>
                 <li>
                     <UserRound />
+                </li>
+            </Link>
+            <Link to='/cart' className='hover-link'>
+                <li>
+                    <ShoppingBasket />
                 </li>
             </Link>
         </ul>
