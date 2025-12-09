@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+    border-bottom: 1px solid #1e1e1e;
 }
 
 .navbar ul{

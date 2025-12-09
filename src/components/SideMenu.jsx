@@ -13,6 +13,7 @@ const SideMenu = ({setShowMenu}) => {
             <Link to='/shop' className='hover-link' onClick={handleCloseMenu}><li>Shop</li></Link>
             <Link to='/categories' className='hover-link' onClick={handleCloseMenu}><li>Categories</li></Link>
             <Link to='/account' className='hover-link' onClick={handleCloseMenu}><li>Account</li></Link>
+            <Link to='/cart' className='hover-link' onClick={handleCloseMenu}><li>Cart</li></Link>
         </ul>
     </div>
   )

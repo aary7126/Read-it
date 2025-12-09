@@ -46,7 +46,7 @@ const Contact = () => {
 
         <div className="contact-image">
          
-          <img src="public/images/contact.png"/>
+          <img src="/images/contact.png"/>
         </div>
       </div>
     </div>

@@ -1,0 +1,160 @@
+/* PAGE WRAPPER */
+.shop-page {
+  min-height: 100vh;
+}
+
+/* PAGE TITLE */
+.shop-title {
+  text-align: center;
+  margin: 4rem 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* LAYOUT */
+.layout {
+  max-width: 1100px;
+  margin: 24px auto 40px;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 32px;
+}
+
+/* SIDEBAR */
+.sidebar {
+  padding-right: 32px;
+  border-right: 1px solid #e3e3e3;
+}
+
+.filter-group {
+  margin-bottom: 32px;
+}
+
+.filter-group h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.option input {
+  accent-color: #111;
+}
+
+/* PRICE RANGE */
+.price-range-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.price-range {
+  width: 100%;
+  margin: 4px 0;
+}
+
+.price-value {
+  font-size: 13px;
+  color: #777;
+}
+
+/* PRODUCTS LIST */
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.book-card {
+  display: flex;
+  gap: 18px;
+  background: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #e5e5e5;
+  padding: 16px 20px;
+}
+
+.book-cover {
+  width: 90px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.book-info {
+  flex: 1;
+}
+
+.book-title {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.book-author {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.book-langs {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.book-price {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.book-delivery {
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.add-btn {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #111;
+  background: #111;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background: #333;
+}
+
+/* NO RESULTS */
+.no-results {
+  font-size: 14px;
+  color: #777;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+
+  .layout {
+    grid-template-columns: 1fr;
+    padding: 0 16px;
+  }
+
+  .sidebar {
+    border-right: none;
+    border-bottom: 1px solid #e3e3e3;
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+
+}
