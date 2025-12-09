@@ -1,0 +1,57 @@
+.block1 {
+  margin: 8% 0;
+  padding: 0;
+  display: flex;
+}
+
+.section1 {
+  justify-self: flex-start;
+  margin-top: 5%;
+  width: 45%;
+}
+
+.heading1 {
+  margin: 5% 0;
+}
+
+.info-1 {
+  margin: 3% 0;
+  font-size: large;
+}
+
+.image1 {
+  margin-left: 30%;
+  justify-self: flex-end;
+  height: 500px;
+  width: 500px;
+}
+
+.section4 {
+  margin-left: 15%;
+  justify-self: flex-end;
+  margin-top: 5%;
+  width: 45%;
+}
+
+.image2 {
+  border-radius: 100px;
+  margin: 30% 15%;
+  justify-self: flex-start;
+  height: 400px;
+  width: 400px;
+}
+
+.section5 {
+  justify-self: flex-start;
+  margin: 5% 10% 0 0;
+  width: 50%;
+}
+
+.section6 {
+  justify-self: flex-end;
+  margin: 5% 10% 0 0;
+  width: 50%;
+}
+.sect1 {
+  margin: 0 5%;
+}

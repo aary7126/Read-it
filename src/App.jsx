@@ -24,11 +24,11 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/shop' element={<Shop />} />
-        <Route path='/product' element={<Product />} />
+        <Route path='/Product' element={<Product />} />
         <Route path='/categories' element={<Categories />} />
         <Route path='/account' element={<AccountLayout />}>
-          <Route index element={<Profile />} />
-          <Route path='orders' element={<MyOrders />} />
+        <Route index element={<Profile />} />
+        <Route path='orders' element={<MyOrders />} />
         </Route>
       </Routes>
       <Footer />
